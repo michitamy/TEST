@@ -93,7 +93,11 @@ namespace Datos
             }
             return resultado;
         }
-        
+
+        public void holaMich() {
+            Console.Write("ola k ase");
+        }
+
         /// <summary>
         /// metodo que despliega datos del maestro
         /// </summary>
