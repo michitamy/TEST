@@ -47,6 +47,10 @@ namespace Datos
                 paramItems.Value = eT.NoEmpleado;
                 cmdItems.Parameters.Add(paramItems);
 
+                paramItems = new SqlParameter("@titulo", SqlDbType.VarChar, 50);
+                paramItems.Value = eT.Titulo;
+                cmdItems.Parameters.Add(paramItems);
+
                 paramItems = new SqlParameter("@nombre", SqlDbType.VarChar, 50);
                 paramItems.Value = eT.Nombre;
                 cmdItems.Parameters.Add(paramItems);

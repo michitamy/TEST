@@ -57,6 +57,10 @@
     <Content Include="Account\Register.aspx" />
     <Content Include="GridViewAlumno.aspx" />
     <Content Include="GridViewMaestro.aspx" />
+    <Content Include="Img\cancel-icon.png" />
+    <Content Include="Img\delete-icon.png" />
+    <Content Include="Img\edit.png" />
+    <Content Include="Img\ok-icon.png" />
     <Content Include="Styles\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />

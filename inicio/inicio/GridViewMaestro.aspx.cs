@@ -34,6 +34,7 @@ namespace inicio
                 {
                     gvMaestro.DataSource = dsItems.Tables[0];
                     Session["TaskTable"] = dsItems.Tables[0];
+                    //Session["myRow"] = dsItems.Tables[0].Rows[0];
                 }
                 else
                     return false;
@@ -49,7 +50,7 @@ namespace inicio
         protected void btSave_Click(object sender, EventArgs e)
         {
             objMaestroEntity.NoEmpleado = txtNoEmpleado.Text;
-            objMaestroEntity.Titulo = ddTitulo.Text;
+            objMaestroEntity.Titulo = ddTitulo.SelectedItem.Text;
             objMaestroEntity.Nombre = txtNombre.Text;
             objMaestroEntity.ApellidoP = txtApellidoP.Text;
             objMaestroEntity.ApellidoM = txtApellidoM.Text;
@@ -80,6 +81,8 @@ namespace inicio
         protected void ibToExcel_Click1(object sender, EventArgs e)
         {
             DataTable dt = (DataTable)Session["TaskTable"];
+            //DataRow dr = (DataRow)Session["myRow"];
+          
 
             string attachment = "attachment; filename=Model.xls";
 
@@ -112,6 +115,93 @@ namespace inicio
                 Response.Write("\n");
             }
             Response.End();
+        }
+
+        protected void gvMaestro_RowCommand(object sender, GridViewCommandEventArgs e)
+        {
+
+        }
+
+        protected void gvMaestro_RowCancelingEdit(object sender, GridViewCancelEditEventArgs e)
+        {
+            gvMaestro.EditIndex = -1;
+            gvMaestroBind();
+        }
+
+        protected void gvMaestro_RowUpdating(object sender, GridViewUpdateEventArgs e)
+        {
+            int flag = -1;
+
+            try {
+
+                objMaestroEntity.Id = Convert.ToInt32(((HiddenField)gvMaestro.Rows[e.RowIndex].FindControl("hfEITId")).Value);
+
+                objMaestroEntity.NoEmpleado = ((TextBox)gvMaestro.Rows[e.RowIndex].FindControl("txtEITNoEmpleado")).Text;
+                objMaestroEntity.Titulo = ((DropDownList)gvMaestro.Rows[e.RowIndex].FindControl("ddlEITTitulo")).SelectedItem.Text;
+                objMaestroEntity.Nombre = ((TextBox)gvMaestro.Rows[e.RowIndex].FindControl("txtEITNombre")).Text;
+                objMaestroEntity.ApellidoP = ((TextBox)gvMaestro.Rows[e.RowIndex].FindControl("txtEITApellidoP")).Text;
+                objMaestroEntity.ApellidoM = ((TextBox)gvMaestro.Rows[e.RowIndex].FindControl("txtEITApellidoM")).Text;
+                objMaestroEntity.Carrera = ((TextBox)gvMaestro.Rows[e.RowIndex].FindControl("txtEITCarrera")).Text;
+                objMaestroEntity.ModifyBy = "Michelle";
+
+                flag = objMaestroBusiness.Maestro(objMaestroEntity, "Update");
+
+                if (flag > 0 && gvMaestroBind())
+                {
+
+                    lbAlert.Text = "Actualizacion Correcta";
+                    gvMaestro.EditIndex = -1;
+                    gvMaestro.DataBind();
+                    
+                }
+                else
+                {
+                    lbAlert.Text = "Actualizacion Fallida";
+                    gvMaestro.EditIndex = -1;
+                    gvMaestroBind();
+                }
+            
+            }
+            catch (Exception ex)
+            {
+                lbAlert.Text = "Error: " + ex.Message;
+                gvMaestro.EditIndex = -1;
+                gvMaestroBind();
+            }
+        }
+
+        protected void gvMaestro_RowEditing(object sender, GridViewEditEventArgs e)
+        {
+            gvMaestro.EditIndex = e.NewEditIndex;
+            gvMaestroBind();
+        }
+
+        protected void gvMaestro_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            int flag = -1;
+
+            try
+            {
+
+                objMaestroEntity.Id = Convert.ToInt32(((HiddenField)gvMaestro.Rows[e.RowIndex].FindControl("hfId")).Value);
+
+                flag = objMaestroBusiness.Maestro(objMaestroEntity, "Delete");
+
+                if (flag > 0)
+                {
+
+                    lbAlert.Text = "Eliminacion Correcta";
+                    gvMaestroBind();
+                }
+                else
+                {
+                    lbAlert.Text = "Eliminacion Fallida";
+                }
+
+            }
+            catch(Exception ex) {
+                lbAlert.Text = "Error: " + ex.Message;
+            }
         }
     }
 }
