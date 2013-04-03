@@ -1,78 +1,86 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="GridViewMaestro.aspx.cs" Inherits="inicio.GridViewMaestro" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true"
+    CodeBehind="GridViewMaestro.aspx.cs" Inherits="inicio.GridViewMaestro" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-<table>
-    <tr>
-        <td>
-            No de Empleado:
-        </td>
-        <td>
-            <asp:TextBox ID="txtNoEmpleado" runat="server"></asp:TextBox>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            Titulo:
-        </td>
-        <td>
-            <asp:DropDownList ID="ddTitulo" runat="server" Height="30px" Width="155px" 
-                style="margin-left: 0px">
-                <asp:ListItem>M.I.</asp:ListItem>
-                <asp:ListItem>M.C.</asp:ListItem>
-                <asp:ListItem>Dr.</asp:ListItem>
-                <asp:ListItem>Ocean.</asp:ListItem>
-                <asp:ListItem>Lic.</asp:ListItem>
-                <asp:ListItem>L.C.C</asp:ListItem>
-                <asp:ListItem>Ing.</asp:ListItem>
+    <table>
+        <tr>
+            <td>
+                No de Empleado:
+            </td>
+            <td>
+                <asp:TextBox ID="txtNoEmpleado" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Titulo:
+            </td>
+            <td>
+                <asp:DropDownList ID="ddTitulo" runat="server" Height="30px" Width="155px" Style="margin-left: 0px">
+                    <asp:ListItem>M.I.</asp:ListItem>
+                    <asp:ListItem>M.C.</asp:ListItem>
+                    <asp:ListItem>Dr.</asp:ListItem>
+                    <asp:ListItem>Ocean.</asp:ListItem>
+                    <asp:ListItem>Lic.</asp:ListItem>
+                    <asp:ListItem>L.C.C</asp:ListItem>
+                    <asp:ListItem>Ing.</asp:ListItem>
                 </asp:DropDownList>
-        </td>
-     </tr>
-     <tr>
-        <td>
-            Nombre:
-        </td>
-        <td>
-            <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
-        </td>
-     </tr>
-     <tr>
-        <td>
-            Apellido Paterno:
-        </td>
-        <td>
-            <asp:TextBox ID="txtApellidoP" runat="server"></asp:TextBox>
-        </td>
-      </tr>
-      <tr>
-        <td>
-            Apellido Materno:
-        </td>
-        <td>
-            <asp:TextBox ID="txtApellidoM" runat="server"></asp:TextBox>
-        </td>
-      </tr>
-      <tr>
-        <td>
-            Carrera a la que pertenece:
-        </td>
-        <td>
-            <asp:TextBox ID="txtCarrera" runat="server"></asp:TextBox>
-        </td>
-      </tr>
-</table>
-        <br />
-
-<asp:Button ID="btGuardarMaestro" runat="server" Text="Guardar" />
-        <br />
-<asp:Label ID="lbAlert" runat="server" Text="Label"></asp:Label>
-
-
-
-    <asp:GridView ID="gvMaestro" runat="server" AutoGenerateColumns="False" 
-        BackColor="White" BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" 
-        CellPadding="3" style="text-align: center" Width="550px">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Nombre:
+            </td>
+            <td>
+                <asp:TextBox ID="txtNombre" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Apellido Paterno:
+            </td>
+            <td>
+                <asp:TextBox ID="txtApellidoP" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Apellido Materno:
+            </td>
+            <td>
+                <asp:TextBox ID="txtApellidoM" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Carrera a la que pertenece:
+            </td>
+            <td>
+                <asp:TextBox ID="txtCarrera" runat="server"></asp:TextBox>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <asp:Button ID="btGuardarMaestro" runat="server" Text="Guardar" OnClick = "btSave_Click"/>
+    <br />
+    <asp:Label ID="lbAlert" runat="server" Text="Label"></asp:Label>
+    <asp:GridView ID="gvMaestro" runat="server" AutoGenerateColumns="False" BackColor="White"
+        BorderColor="#CCCCCC" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" Style="text-align: center"
+        Width="550px">
         <Columns>
+
+            <asp:TemplateField>
+                <ItemTemplate>
+                    <asp:Button ID="ibEdit" runat="server" CausesValidation="false" CommandName="Edit" ToolTip="Editar modelo" Text ="Editar"/>
+                </ItemTemplate>
+                <EditItemTemplate>
+                    <asp:Button ID="ibUpdate" runat="server" CausesValidation="true" CommandName="Update" ToolTip="Actualizar modelo" ValidationGroup="validaGridView" Text ="Actualizar"/>
+                    <asp:Button ID="ibCancel" runat="server" CausesValidation="false" CommandName="Cancel" ToolTip="Cancelar modelo" Text ="Cancelar"/>
+                </EditItemTemplate>
+            </asp:TemplateField>
+
             <asp:TemplateField HeaderText="NoEmpleado">
                 <ItemTemplate>
                     <asp:Label ID="lblNoEmpleado" runat="server" Text='<%#Eval("noEmpleado") %>'></asp:Label>
@@ -83,19 +91,19 @@
                     <asp:Label ID="lblTitulo" runat="server" Text='<%#Eval("Titulo") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
-             <asp:TemplateField HeaderText="Nombre">
+            <asp:TemplateField HeaderText="Nombre">
                 <ItemTemplate>
                     <asp:Label ID="lblNombre" runat="server" Text='<%#Eval("Nombre") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
-             <asp:TemplateField HeaderText="ApellidoP">
+            <asp:TemplateField HeaderText="ApellidoP">
                 <ItemTemplate>
-                    <asp:Label ID="lblApellidoP" runat="server" Text='<%#Eval("Apellido") %>'></asp:Label>
+                    <asp:Label ID="lblApellidoP" runat="server" Text='<%#Eval("ApellidoP") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="ApellidoM">
                 <ItemTemplate>
-                    <asp:Label ID="lblApellidoM" runat="server" Text='<%#Eval("Edad")%>'></asp:Label>
+                    <asp:Label ID="lblApellidoM" runat="server" Text='<%#Eval("ApellidoM")%>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Carrera">
@@ -104,6 +112,9 @@
                 </ItemTemplate>
             </asp:TemplateField>
         </Columns>
-        </asp:GridView>
-
+    </asp:GridView>
+    <br />
+    <asp:Button ID="btExportarLista" runat="server" BackColor="#00CC66" BorderStyle="None"
+        ForeColor="#003300" Text="Exportar a Excel" OnClick="ibToExcel_Click1" />
+    <br />
 </asp:Content>

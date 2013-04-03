@@ -1,0 +1,14 @@
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Datos\bin\Debug\Datos.dll
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Datos\bin\Debug\Datos.pdb
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Datos\bin\Debug\Entidades.dll
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Datos\bin\Debug\Entidades.pdb
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Datos\obj\Debug\ResolveAssemblyReference.cache
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Datos\obj\Debug\Datos.dll
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Datos\obj\Debug\Datos.pdb
+C:\Users\Michelle\Documents\GitHub\Test\inicio\Datos\bin\Debug\Datos.dll
+C:\Users\Michelle\Documents\GitHub\Test\inicio\Datos\bin\Debug\Datos.pdb
+C:\Users\Michelle\Documents\GitHub\Test\inicio\Datos\bin\Debug\Entidades.dll
+C:\Users\Michelle\Documents\GitHub\Test\inicio\Datos\bin\Debug\Entidades.pdb
+C:\Users\Michelle\Documents\GitHub\Test\inicio\Datos\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Michelle\Documents\GitHub\Test\inicio\Datos\obj\Debug\Datos.dll
+C:\Users\Michelle\Documents\GitHub\Test\inicio\Datos\obj\Debug\Datos.pdb

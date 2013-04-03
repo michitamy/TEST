@@ -1,0 +1,5 @@
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Entidades\bin\Debug\Entidades.dll
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Entidades\bin\Debug\Entidades.pdb
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Entidades\obj\Debug\ResolveAssemblyReference.cache
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Entidades\obj\Debug\Entidades.dll
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\Entidades\obj\Debug\Entidades.pdb

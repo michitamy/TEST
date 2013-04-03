@@ -34,7 +34,7 @@ namespace Datos
             {
                 cmdItems.Connection = connection;
                 cmdItems.CommandType = CommandType.StoredProcedure;//store procedure permite hacer uso del sqlparameters
-                cmdItems.CommandText = "[gezi].[spMaestros]";
+                cmdItems.CommandText = "[gezi].[spMaestro]";
                 SqlParameter paramItems = new SqlParameter("@option", SqlDbType.VarChar, 50);
                 paramItems.Value = op;
                 cmdItems.Parameters.Add(paramItems);
@@ -62,11 +62,7 @@ namespace Datos
                 paramItems = new SqlParameter("@carrera", SqlDbType.VarChar, 50);
                 paramItems.Value = eT.Carrera;
                 cmdItems.Parameters.Add(paramItems);
-
-                paramItems = new SqlParameter("@id", SqlDbType.VarChar, 50);
-                paramItems.Value = op;
-                cmdItems.Parameters.Add(paramItems);
-                
+               
                 paramItems = new SqlParameter("@modifyBy", SqlDbType.VarChar, 50);
                 paramItems.Value = eT.ModifyBy;
                 cmdItems.Parameters.Add(paramItems);
@@ -120,7 +116,7 @@ namespace Datos
             {
                 cmdItems.Connection = connection;
                 cmdItems.CommandType = CommandType.StoredProcedure;//store procedure permite hacer uso del sqlparameters
-                cmdItems.CommandText = "[gezi].[spMaestros]";
+                cmdItems.CommandText = "[gezi].[spMaestro]";
                 SqlParameter paramItems = new SqlParameter("@option", SqlDbType.VarChar, 50);
                 paramItems.Value = op;
                 cmdItems.Parameters.Add(paramItems);
@@ -148,11 +144,7 @@ namespace Datos
                 paramItems = new SqlParameter("@carrera", SqlDbType.VarChar, 50);
                 paramItems.Value = eT.Carrera;
                 cmdItems.Parameters.Add(paramItems);
-
-                paramItems = new SqlParameter("@id", SqlDbType.VarChar, 50);
-                paramItems.Value = op;
-                cmdItems.Parameters.Add(paramItems);
-                
+               
                 paramItems = new SqlParameter("@modifyBy", SqlDbType.VarChar, 50);
                 paramItems.Value = eT.ModifyBy;
                 cmdItems.Parameters.Add(paramItems);

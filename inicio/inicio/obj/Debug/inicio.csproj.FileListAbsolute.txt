@@ -1,0 +1,22 @@
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\inicio\bin\inicio.dll
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\inicio\bin\inicio.pdb
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\inicio\obj\Debug\ResolveAssemblyReference.cache
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\inicio\obj\Debug\inicio.dll
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\inicio\obj\Debug\inicio.pdb
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\inicio\bin\Entidades.dll
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\inicio\bin\Negocios.dll
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\inicio\bin\Datos.dll
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\inicio\bin\Entidades.pdb
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\inicio\bin\Negocios.pdb
+c:\users\michelle\documents\visual studio 2010\Projects\inicio\inicio\bin\Datos.pdb
+C:\Users\Michelle\Documents\GitHub\Test\inicio\inicio\bin\inicio.dll
+C:\Users\Michelle\Documents\GitHub\Test\inicio\inicio\bin\inicio.pdb
+C:\Users\Michelle\Documents\GitHub\Test\inicio\inicio\bin\Datos.dll
+C:\Users\Michelle\Documents\GitHub\Test\inicio\inicio\bin\Entidades.dll
+C:\Users\Michelle\Documents\GitHub\Test\inicio\inicio\bin\Negocios.dll
+C:\Users\Michelle\Documents\GitHub\Test\inicio\inicio\bin\Datos.pdb
+C:\Users\Michelle\Documents\GitHub\Test\inicio\inicio\bin\Entidades.pdb
+C:\Users\Michelle\Documents\GitHub\Test\inicio\inicio\bin\Negocios.pdb
+C:\Users\Michelle\Documents\GitHub\Test\inicio\inicio\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Michelle\Documents\GitHub\Test\inicio\inicio\obj\Debug\inicio.dll
+C:\Users\Michelle\Documents\GitHub\Test\inicio\inicio\obj\Debug\inicio.pdb

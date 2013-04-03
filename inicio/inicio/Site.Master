@@ -33,7 +33,7 @@
                     <Items>
                         <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
                         <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>                        
-                        <asp:MenuItem NavigateUrl="~/gridView.aspx" Text="Catalogo"/>
+                        <asp:MenuItem NavigateUrl="~/GridViewMaestro.aspx" Text="Catalogo Maestro"/>
                     </Items>
                 </asp:Menu>
             </div>
