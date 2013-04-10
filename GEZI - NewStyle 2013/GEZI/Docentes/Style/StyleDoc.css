@@ -1,0 +1,289 @@
+﻿.container
+{
+    border: 1px solid #e6e6e6;
+    /*width: 80%;*/
+    max-width: 1080px; /* a max-width may be desirable to keep this layout from getting too wide on a large monitor. This keeps line length more readable. IE6 does not respect this declaration. */
+    min-width: 1080px; /* a min-width may be desirable to keep this layout from getting too narrow. This keeps line length more readable in the side columns. IE6 does not respect this declaration. */
+    background: #FFF;
+    margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout. It is not needed if you set the .container's width to 100%. */
+}
+
+.sidebar1
+{
+    float: left;
+    width: 20%;
+    background: #F2F2F2 url('../Images/Master/sombra.png') repeat-y right 50%;
+    padding-bottom: 10px;
+}
+
+.content
+{
+    padding: 0px 12px;
+    width: 74%;
+    float: right;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+/*Pop-Up
+-------------------------------------*/
+.modalBackground
+{
+    background-color: Gray;
+    filter: alpha(opacity=50);
+    opacity: 0.50;
+}
+.updateProgress
+{
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+/*Grids
+-------------------------------------*/
+.DataGrid
+{
+    padding: 15px 10px 25px 10px;
+}
+
+/* MaskedEditExtender
+--------------------------------------*/
+.MaskedEditError
+{
+    background-color: #FFCCBF;
+}
+
+.MaskedEditFocus
+{
+    background-color: #FFFF99;
+}
+
+.watermarked
+{
+    color: #CCCCCC;
+}
+
+/* Rating
+---------------------------------*/
+.ratingStar
+{
+    font-size: 0pt;
+    width: 13px;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: block;
+    background-repeat: no-repeat;
+}
+
+.filledRatingStar
+{
+    background-image: url(../Images/FilledStar.png);
+}
+
+.emptyRatingStar
+{
+    background-image: url(../Images/EmptyStar.png);
+}
+
+.savedRatingStar
+{
+    background-image: url(../Images/SavedStar.png);
+}
+
+/*Collapsible
+------------------------------------------*/
+
+.collapsePanelHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    width: 100%;
+    height: 30px;
+    background-color: #2E4d7B;
+    font-weight: bold;
+}
+
+.collapsePanel
+{
+    padding: 5px 15px 5px 10px;
+    overflow: hidden;
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+}
+
+/* Accordion
+----------------------------------------------*/
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #2E4d7B;
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeader a
+{
+    color: #FFFFFF;
+    background: none;
+    text-decoration: none;
+}
+
+#master_content .accordionHeader a:hover
+{
+    background: none;
+    text-decoration: underline;
+}
+
+.accordionHeaderSelected
+{
+    border: 1px solid #2F4F4F;
+    color: white;
+    background-color: #5078B3;
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+#master_content .accordionHeaderSelected a
+{
+    color: #FFFFFF;
+    background: none;
+    text-decoration: none;
+}
+
+#master_content .accordionHeaderSelected a:hover
+{
+    background: none;
+    text-decoration: underline;
+}
+
+.accordionContent
+{
+    background-color: #D3DEEF;
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.accordionLink
+{
+    color: White;
+    cursor: pointer;
+}
+
+.site-location
+{
+    background-color: #F0F0EE;
+    height: 23px;
+    line-height: 23px;
+    top: 0;
+    width: 100%;
+    position: relative;
+}
+
+/*AutoComplete Extender
+-------------------------------------------*/
+.AutoExtender
+{
+    font-family: Verdana, Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight: normal;
+    border: solid 1px #006699;
+    line-height: 20px;
+    padding: 10px;
+    background-color: White;
+    margin-left: 10px;
+    text-align: left;
+}
+.AutoExtenderList
+{
+    border-bottom: dotted 1px #006699;
+    cursor: pointer;
+    color: Maroon;
+}
+.AutoExtenderHighlight
+{
+    color: White;
+    background-color: #006699;
+    cursor: pointer;
+}
+
+#divwidth
+{
+    width: 200px !important;
+}
+#divwidth div
+{
+    width: 200px !important;
+}
+
+/* tooltip
+-----------------------------------*/
+.icoHelp
+{
+    cursor: pointer;
+}
+
+.capaHelpLong
+{
+    display: none;
+    background: url(../Images/tooltipLong.png) no-repeat top left;
+    width: 550px;
+    padding: 15px 35px 5px 38px;
+    height: 222px;
+    color: #000;
+    margin: -50px 15px 0 5px;
+    position: absolute;
+    z-index: 101;
+}
+
+.capaHelp
+{
+    display: none;
+    background: url(../Images/tooltipSmall.png) no-repeat top left;
+    width: 550px;
+    padding: 15px 35px 5px 38px;
+    height: 136px;
+    color: #000;
+    margin: -50px 15px 0 5px;
+    position: absolute;
+    z-index: 101;
+}
+
+.export
+{
+	background: url(../Images/excel16.gif) no-repeat 5px 10px;
+	border: 0;
+	height: 35px;
+	width: 160px;
+	border-right: 1px solid #d0d0d0;
+}
+
+
+/*Scroll bart
+----------------------------------------------------------*/
+.scroll
+{
+    /*Nuevo ->*/
+    max-height: 125px;
+    max-width:350px;
+    overflow-y: auto; /* prevent horizontal scrollbar */
+    overflow-x: hidden; /* add padding to account for vertical scrollbar */
+    border-bottom: 1px solid #ededed;
+    border-top: 1px solid #ededed;
+}

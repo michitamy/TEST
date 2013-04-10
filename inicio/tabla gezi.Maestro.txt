@@ -1,0 +1,11 @@
+Id		int		Unchecked
+NoEmpleado	varchar(50)	Unchecked
+Titulo		varchar(50)	Unchecked
+Nombre		varchar(50)	Unchecked
+ApellidoP	varchar(50)	Unchecked
+ApellidoM	varchar(50)	Unchecked
+Carrera		varchar(50)	Unchecked
+ModifyBy	varchar(50)	Unchecked
+ModifyHost	varchar(50)	Unchecked
+ModifyDate	smalldatetime	Unchecked
+		Unchecked

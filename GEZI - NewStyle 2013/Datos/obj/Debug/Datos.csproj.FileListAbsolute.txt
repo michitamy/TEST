@@ -1,0 +1,63 @@
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Datos\bin\Debug\Datos.dll
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Datos\bin\Debug\Datos.pdb
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Datos\bin\Debug\Entidades.dll
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Datos\bin\Debug\Entidades.pdb
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Datos\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Datos\obj\Debug\Datos.dll
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Datos\obj\Debug\Datos.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Datos\bin\Debug\Datos.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Datos\bin\Debug\Datos.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Datos\bin\Debug\Entidades.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Datos\bin\Debug\Entidades.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Datos\obj\Debug\Datos.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Datos\obj\Debug\Datos.pdb
+F:\Projectos\Independientes\GEZI\Datos\bin\Debug\Datos.dll
+F:\Projectos\Independientes\GEZI\Datos\bin\Debug\Datos.pdb
+F:\Projectos\Independientes\GEZI\Datos\bin\Debug\Entidades.dll
+F:\Projectos\Independientes\GEZI\Datos\bin\Debug\Entidades.pdb
+F:\Projectos\Independientes\GEZI\Datos\obj\Debug\ResolveAssemblyReference.cache
+F:\Projectos\Independientes\GEZI\Datos\obj\Debug\Datos.dll
+F:\Projectos\Independientes\GEZI\Datos\obj\Debug\Datos.pdb
+F:\Projectos\Independientes\GEZI - NewStyle\Datos\bin\Debug\Datos.dll
+F:\Projectos\Independientes\GEZI - NewStyle\Datos\bin\Debug\Datos.pdb
+F:\Projectos\Independientes\GEZI - NewStyle\Datos\bin\Debug\Entidades.dll
+F:\Projectos\Independientes\GEZI - NewStyle\Datos\bin\Debug\Entidades.pdb
+F:\Projectos\Independientes\GEZI - NewStyle\Datos\obj\Debug\ResolveAssemblyReference.cache
+F:\Projectos\Independientes\GEZI - NewStyle\Datos\obj\Debug\Datos.dll
+F:\Projectos\Independientes\GEZI - NewStyle\Datos\obj\Debug\Datos.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Datos\bin\Debug\Datos.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Datos\bin\Debug\Datos.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Datos\bin\Debug\Entidades.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Datos\bin\Debug\Entidades.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Datos\obj\Debug\Datos.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Datos\obj\Debug\Datos.pdb
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Datos\obj\Debug\Datos.dll
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Datos\bin\Debug\Datos.dll
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Datos\bin\Debug\Datos.pdb
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Datos\bin\Debug\Entidades.dll
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Datos\bin\Debug\Entidades.pdb
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Datos\obj\Debug\Datos.pdb
+F:\Projects\Independientes\GEZI - NewStyle\Datos\bin\Debug\Datos.dll
+F:\Projects\Independientes\GEZI - NewStyle\Datos\bin\Debug\Datos.pdb
+F:\Projects\Independientes\GEZI - NewStyle\Datos\bin\Debug\Entidades.dll
+F:\Projects\Independientes\GEZI - NewStyle\Datos\bin\Debug\Entidades.pdb
+F:\Projects\Independientes\GEZI - NewStyle\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+F:\Projects\Independientes\GEZI - NewStyle\Datos\obj\Debug\Datos.dll
+F:\Projects\Independientes\GEZI - NewStyle\Datos\obj\Debug\Datos.pdb
+F:\Projects\Independientes\GEZI - NewStyle 2013\Datos\bin\Debug\Datos.dll
+F:\Projects\Independientes\GEZI - NewStyle 2013\Datos\bin\Debug\Datos.pdb
+F:\Projects\Independientes\GEZI - NewStyle 2013\Datos\bin\Debug\Entidades.dll
+F:\Projects\Independientes\GEZI - NewStyle 2013\Datos\bin\Debug\Entidades.pdb
+F:\Projects\Independientes\GEZI - NewStyle 2013\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+F:\Projects\Independientes\GEZI - NewStyle 2013\Datos\obj\Debug\Datos.dll
+F:\Projects\Independientes\GEZI - NewStyle 2013\Datos\obj\Debug\Datos.pdb
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Datos\bin\Debug\Datos.dll
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Datos\bin\Debug\Datos.pdb
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Datos\bin\Debug\Entidades.dll
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Datos\bin\Debug\Entidades.pdb
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Datos\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Datos\obj\Debug\Datos.dll
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Datos\obj\Debug\Datos.pdb

@@ -1,0 +1,30 @@
+﻿.tlwhitecp
+{
+    border-left: solid 1px white;
+}
+.tnp
+{
+    border-left: solid 0 #E8F5FD;
+    padding:7px;
+}
+.hidden
+{
+    display: none;
+}
+.tlwhitecp
+{
+    border-left: solid 1px white;
+}
+
+.cerrar
+{
+    text-align: right;
+    padding-right: 8px;
+}
+
+.ImagenInst
+{
+    display: block;
+    margin: auto;
+    text-align: center;
+}

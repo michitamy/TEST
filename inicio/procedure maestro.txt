@@ -1,0 +1,73 @@
+USE [GEZI]
+GO
+/****** Object:  StoredProcedure [gezi].[spMaestro]    Script Date: 04/04/2013 11:57:28 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+-- =============================================
+-- Author:		michelle
+-- Create date: 1 de marzo 2013
+-- Description:	procedimientos inserta seleccionar de la tabla maestro
+-- =============================================
+ALTER PROCEDURE [gezi].[spMaestro]
+
+@option varchar(50)='',
+@id int = 0,
+@noEmpleado varchar(50)='',
+@titulo varchar(50)='',
+@nombre varchar(50)='',
+@apellidoP varchar(50)='',
+@apellidoM varchar(50)='',
+@carrera varchar(50)='',
+@modifyBy varchar(50) = '',
+@modifyHost varchar(50) = '',
+@modifyDate smalldatetime
+
+
+
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+
+   if @option = 'Insert'
+		begin
+			insert into gezi.Maestro
+			values( @noEmpleado,
+					@titulo,
+					@nombre,
+					@apellidoP,
+					@apellidoM,
+					@carrera,
+					@modifyBy,
+					@modifyHost,
+					@modifyDate)
+			end
+	else if @option = 'Delete'
+		begin
+			delete from gezi.Maestro
+			where Id = @id
+		end	
+		
+	else if @option = 'Update'
+		begin
+			update gezi.Maestro
+			set NoEmpleado = @noEmpleado,
+				Titulo =	@titulo,
+				Nombre =	@nombre,
+				ApellidoP =	@apellidoP,
+				ApellidoM = @apellidoM,
+				Carrera = @carrera,
+				ModifyBy =	@modifyBy,
+				ModifyHost= @modifyHost,
+				ModifyDate =	@modifyDate
+				where Id = @id
+		end	
+		
+    else if @option = 'Select'
+		begin
+			select * from gezi.Maestro
+		end
+END
+

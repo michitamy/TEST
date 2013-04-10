@@ -1,0 +1,45 @@
+﻿.panels
+{
+    padding-left: 5px;
+}
+.shadowMenu
+{
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";
+}
+
+.divTable
+{
+    display: table;
+    width: auto;
+}
+
+.divRow
+{
+    display: table-row;
+    width: auto;
+}
+.divCellLeft
+{
+    float: left; /*fix for  buggy browsers*/
+    display: table-column;
+    width: 200px;
+}
+
+.divCellCenter
+{
+    float: left; /*fix for  buggy browsers*/
+    display: table-column; /*width: 650px;*/
+    vertical-align: bottom;
+    text-align: right;
+}
+
+.divCellRight
+{
+    float: left; /*fix for  buggy browsers*/
+    display: table-column; /*width: 40px;*/
+    text-align: right;
+    vertical-align: bottom;
+}

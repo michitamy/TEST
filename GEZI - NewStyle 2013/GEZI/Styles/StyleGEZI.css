@@ -1,0 +1,172 @@
+﻿/*.wrapper
+{
+    text-align: left;
+    margin: 0px auto;
+    padding: 0px;
+    border: 0;
+    width: 700px;
+    background: url("/path/to/your/background_cols.gif") repeat;
+}*/
+
+.notify
+{
+    float: left;
+    width: 50px;
+}
+
+.question
+{
+    float: right;
+    width: 450px;
+}
+
+.response
+{
+    float: left;
+    width: 200px; /*width: 56%;*/
+}
+
+/*Pop-Up
+-------------------------------------*/
+.modalBackground
+{
+    background-color: Gray;
+    filter: alpha(opacity=50);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.updateProgress
+{
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    background-color: #FFFFFF;
+    position: relative;
+    margin: 20px auto 0 auto;
+    top: 0px;
+    left: 0px;
+}
+
+.watermarked
+{
+    color: #CCCCCC;
+}
+
+/*Mensajes
+------------------------------------------*/
+.albox
+{
+    /*New*/
+    width: 350px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px; /*Old*/ /*font-size: 12px;     line-height: 17px;     margin: 15px 0;     padding: 14px 42px;     position: relative;     -moz-border-radius: 3px;     -webkit-border-radius: 3px;     border-radius: 3px;     -moz-box-shadow: 0 1px 0 #F7F7F7;     -webkit-box-shadow: 0 1px 0 #F7F7F7;     box-shadow: 0 1px 0 #F7F7F7;*/
+}
+
+.albox b
+{
+    margin: 0;
+    padding: 0;
+}
+
+.close
+{
+    text-indent: -9999px;
+    background: url(http://localhost:58176/GEZI/Images/mini/close-opacity-21.png) no-repeat center;
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    display: block;
+}
+
+.imgMje
+{
+    padding-right: 14px;
+}
+
+/* Estilo para el texto del control
+----------------------------------*/
+.TitleRows
+{
+    text-align: right;
+    font-weight: bold;
+    float: right;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+/* Fieldset
+-----------------------------------*/
+.alignPanel
+{
+    text-align: right;
+    position: relative;
+}
+fieldset ul, fieldset li
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+fieldset li
+{
+    clear: both;
+    list-style: none;
+    padding-bottom: 10px;
+}
+
+fieldset input
+{
+    float: left;
+}
+fieldset label
+{
+    width: 200px;
+    float: left;
+    font-weight: bold;
+}
+
+/* Background textbox
+------------------------------------*/
+.money
+{
+    background-image: url('../Images/mini/CurrencyDollar.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
+.percent
+{
+    background-image: url('../Images/mini/Percent.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 20px;
+}
+
+/* Footer Popup
+-----------------------------------------------------------*/
+.footerPopup
+{
+    text-align: right;
+    background-color: #eee;
+    width: 100%;
+    border-top: 1px solid Gray;
+}
+
+/* Custom Font
+------------------------------------------------------------*/
+.font
+{
+    font-family: "Segoe UI" , Verdana, Helvetica, Sans-Serif;
+}

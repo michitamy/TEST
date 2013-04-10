@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link rel="shortcut icon" href="../Images/icons/gezi.ico" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="StyleGEZI.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+        $(function () {
+            $('#menu> ul').dropotron({
+                mode: 'fade',
+                globalOffsetY: 11,
+                offsetY: -15
+            });
+        });
+    </script>
+</head>
+<body>
+    <form runat="server">
+    <div id="wrapper">
+        <div id="header">
+            <div id="logo">
+                <h1>
+                    <a href="#">
+                        <img class="pic alignleft" src="http://localhost:58176/GEZI/Images/LOGO.PNG" width="400"
+                            height="54" alt="" />
+                        <%--<asp:Image ID="ImageButton1" runat="server" Width="356" Height="54" ImageUrl="~/Images/LOGO.png"
+                            CssClass="pic alignleft" />--%></a>
+                </h1>
+            </div>
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="http://localhost:58176/GEZI/Default.aspx">Inicio</a></li>
+                <li><a href="http://localhost:58176/GEZI/Nosotros.aspx">Nosotros</a></li>
+                <li class="first"><span class="opener">Busca tu Escuela<b></b></span>
+                    <ul>
+                        <li><a href="http://localhost:58176/GEZI/BuscarEscuelas.aspx?type=1-Preescolar">Preescolar</a></li>
+                        <li><a href="http://localhost:58176/GEZI/BuscarEscuelas.aspx?type=2-Primaria">Primaria</a></li>
+                        <li><a href="http://localhost:58176/GEZI/BuscarEscuelas.aspx?type=3-Secundaria">Secundaria</a></li>
+                        <li><a href="http://localhost:58176/GEZI/BuscarEscuelas.aspx?type=4-Preparatoria">Preparatoria</a></li>
+                        <li><a href="http://localhost:58176/GEZI/BuscarEscuelas.aspx?type=5-Universidad">Universidad</a></li>
+                    </ul>
+                </li>
+                <%--<li><a href="http://localhost:58176/GEZI/BuscarEscuelas.aspx">Busca tu Escuela</a></li>--%>
+                <li><a href="http://localhost:58176/GEZI/Contacto.aspx">Contáctanos</a></li>
+                <li><a href="http://localhost:58176/GEZI/Apoyos.aspx">Apoyos</a></li>
+            </ul>
+            <br class="clearfix" /> 
+        </div>
+        <div id="slider">
+            <asp:ContentPlaceHolder ID="SliderContent" runat="server" />
+        </div>
+        <div id="page">
+            <%--<div id="content-2">--%>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <br class="clearfix" />
+            <%-- </div>
+            <div id="sidebar">
+            </div>
+            <br class="clearfix" />--%>
+        </div>
+        <div id="page-bottom">
+            <asp:ContentPlaceHolder ID="BottomContent" runat="server" />
+        </div>
+    </div>
+    <div id="footer">
+        ©
+        <%= DateTime.Now.Year.ToString() %>
+        GEZI. Derechos reservados. Diseño web por <a href="http://www.idevware.com">Idevware</a>.</div>
+    </form>
+</body>
+</html>

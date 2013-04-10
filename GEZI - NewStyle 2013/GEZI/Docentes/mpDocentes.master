@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mpDocentes.master.cs" Inherits="Docentes_mpDocentes" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Style/Site.css" rel="stylesheet" type="text/css" />
+    <link href="Style/StyleDoc.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="container">
+        <div class="header">
+            <div class="bgHeader">
+            </div>
+            <div style="height: 5px; width: 100%; background-color: #004F9D;" />
+            <!-- end .header -->
+        </div>
+        <div class="clear sidebar1">
+            <asp:TreeView ID="NavigationTreeView" runat="server" EnableViewState="False">
+                <NodeStyle HorizontalPadding="5px" />
+                <Nodes>
+                    <asp:TreeNode Text="Licenciatura"   Value="Licenciatura"    NavigateUrl="~/Docentes/Licenciatura.aspx"/>
+                    <asp:TreeNode Text="Posgrado"       Value="Posgrado"        NavigateUrl="~/Docentes/Posgrado.aspx"/>
+                    <asp:TreeNode Text="Exp Docente"    Value="ExpDocente"/>
+                    <asp:TreeNode Text="Exp Laboral"    Value="ExpLaboral"/>
+                    <asp:TreeNode Text="Cursos Asis"    Value="CursosAsis"/>
+                    <asp:TreeNode Text="Congresos Asis" Value="CongresosAsis"/>
+                    <asp:TreeNode Text="Cursos Imp"     Value="CursosImp"/>
+                </Nodes>
+            </asp:TreeView>
+            <!-- end .sidebar1 -->
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            <!-- end .content -->
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    </form>
+</body>
+</html>

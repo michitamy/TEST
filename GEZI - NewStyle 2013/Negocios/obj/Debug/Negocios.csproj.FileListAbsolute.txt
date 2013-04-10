@@ -1,0 +1,81 @@
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Negocios\bin\Debug\Negocios.dll
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Negocios\bin\Debug\Datos.dll
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Negocios\bin\Debug\Entidades.dll
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Negocios\bin\Debug\Datos.pdb
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Negocios\bin\Debug\Entidades.pdb
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Negocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Negocios\obj\Debug\Negocios.dll
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Negocios\bin\Debug\Negocios.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Negocios\bin\Debug\Datos.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Negocios\bin\Debug\Entidades.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Negocios\bin\Debug\Datos.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Negocios\bin\Debug\Entidades.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Negocios\obj\Debug\Negocios.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Negocios\obj\Debug\Negocios.pdb
+F:\Projectos\Independientes\GEZI\Negocios\bin\Debug\Negocios.dll
+F:\Projectos\Independientes\GEZI\Negocios\bin\Debug\Negocios.pdb
+F:\Projectos\Independientes\GEZI\Negocios\bin\Debug\Datos.dll
+F:\Projectos\Independientes\GEZI\Negocios\bin\Debug\Entidades.dll
+F:\Projectos\Independientes\GEZI\Negocios\bin\Debug\Datos.pdb
+F:\Projectos\Independientes\GEZI\Negocios\bin\Debug\Entidades.pdb
+F:\Projectos\Independientes\GEZI\Negocios\obj\Debug\ResolveAssemblyReference.cache
+F:\Projectos\Independientes\GEZI\Negocios\obj\Debug\Negocios.dll
+F:\Projectos\Independientes\GEZI\Negocios\obj\Debug\Negocios.pdb
+F:\Projectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Negocios.dll
+F:\Projectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Negocios.pdb
+F:\Projectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Datos.dll
+F:\Projectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Entidades.dll
+F:\Projectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Datos.pdb
+F:\Projectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Entidades.pdb
+F:\Projectos\Independientes\GEZI - NewStyle\Negocios\obj\Debug\ResolveAssemblyReference.cache
+F:\Projectos\Independientes\GEZI - NewStyle\Negocios\obj\Debug\Negocios.dll
+F:\Projectos\Independientes\GEZI - NewStyle\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Negocios.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Datos.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Entidades.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Datos.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Entidades.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Negocios\obj\Debug\Negocios.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Negocios\obj\Debug\Negocios.dll
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Negocios\bin\Debug\Negocios.dll
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Negocios\bin\Debug\Datos.dll
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Negocios\bin\Debug\Entidades.dll
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Negocios\bin\Debug\Datos.pdb
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Negocios\bin\Debug\Entidades.pdb
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Negocios\obj\Debug\Negocios.pdb
+F:\Projects\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Negocios.dll
+F:\Projects\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Negocios.pdb
+F:\Projects\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Datos.dll
+F:\Projects\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Entidades.dll
+F:\Projects\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Datos.pdb
+F:\Projects\Independientes\GEZI - NewStyle\Negocios\bin\Debug\Entidades.pdb
+F:\Projects\Independientes\GEZI - NewStyle\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+F:\Projects\Independientes\GEZI - NewStyle\Negocios\obj\Debug\Negocios.dll
+F:\Projects\Independientes\GEZI - NewStyle\Negocios\obj\Debug\Negocios.pdb
+F:\Projects\Independientes\GEZI - NewStyle 2013\Negocios\bin\Debug\Negocios.dll
+F:\Projects\Independientes\GEZI - NewStyle 2013\Negocios\bin\Debug\Negocios.pdb
+F:\Projects\Independientes\GEZI - NewStyle 2013\Negocios\bin\Debug\Datos.dll
+F:\Projects\Independientes\GEZI - NewStyle 2013\Negocios\bin\Debug\Entidades.dll
+F:\Projects\Independientes\GEZI - NewStyle 2013\Negocios\bin\Debug\Datos.pdb
+F:\Projects\Independientes\GEZI - NewStyle 2013\Negocios\bin\Debug\Entidades.pdb
+F:\Projects\Independientes\GEZI - NewStyle 2013\Negocios\obj\Debug\Negocios.csprojResolveAssemblyReference.cache
+F:\Projects\Independientes\GEZI - NewStyle 2013\Negocios\obj\Debug\Negocios.dll
+F:\Projects\Independientes\GEZI - NewStyle 2013\Negocios\obj\Debug\Negocios.pdb
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Negocios\bin\Debug\Negocios.dll
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Negocios\bin\Debug\Negocios.pdb
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Negocios\bin\Debug\Datos.dll
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Negocios\bin\Debug\Entidades.dll
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Negocios\bin\Debug\Datos.pdb
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Negocios\bin\Debug\Entidades.pdb
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Negocios\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Negocios\obj\Debug\Negocios.dll
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Negocios\obj\Debug\Negocios.pdb

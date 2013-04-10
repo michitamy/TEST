@@ -1,0 +1,40 @@
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Entidades\bin\Debug\Entidades.dll
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Entidades\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Entidades\obj\Debug\Entidades.dll
+C:\Users\Idevware\Documents\Visual Studio 2010\Projects\GEZI\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Entidades\bin\Debug\Entidades.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Entidades\obj\Debug\Entidades.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI\Entidades\obj\Debug\Entidades.pdb
+F:\Projectos\Independientes\GEZI\Entidades\bin\Debug\Entidades.dll
+F:\Projectos\Independientes\GEZI\Entidades\bin\Debug\Entidades.pdb
+F:\Projectos\Independientes\GEZI\Entidades\obj\Debug\ResolveAssemblyReference.cache
+F:\Projectos\Independientes\GEZI\Entidades\obj\Debug\Entidades.dll
+F:\Projectos\Independientes\GEZI\Entidades\obj\Debug\Entidades.pdb
+F:\Projectos\Independientes\GEZI - NewStyle\Entidades\bin\Debug\Entidades.dll
+F:\Projectos\Independientes\GEZI - NewStyle\Entidades\bin\Debug\Entidades.pdb
+F:\Projectos\Independientes\GEZI - NewStyle\Entidades\obj\Debug\ResolveAssemblyReference.cache
+F:\Projectos\Independientes\GEZI - NewStyle\Entidades\obj\Debug\Entidades.dll
+F:\Projectos\Independientes\GEZI - NewStyle\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Entidades\obj\Debug\Entidades.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Entidades\bin\Debug\Entidades.dll
+C:\Users\Ricardo\Documents\Proyectos\Independientes\GEZI - NewStyle\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Entidades\bin\Debug\Entidades.dll
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Entidades\obj\Debug\Entidades.dll
+C:\Users\Ricardo\Desktop\GEZI - NewStyle\Entidades\obj\Debug\Entidades.pdb
+F:\Projects\Independientes\GEZI - NewStyle\Entidades\bin\Debug\Entidades.dll
+F:\Projects\Independientes\GEZI - NewStyle\Entidades\bin\Debug\Entidades.pdb
+F:\Projects\Independientes\GEZI - NewStyle\Entidades\obj\Debug\Entidades.dll
+F:\Projects\Independientes\GEZI - NewStyle\Entidades\obj\Debug\Entidades.pdb
+F:\Projects\Independientes\GEZI - NewStyle 2013\Entidades\bin\Debug\Entidades.dll
+F:\Projects\Independientes\GEZI - NewStyle 2013\Entidades\bin\Debug\Entidades.pdb
+F:\Projects\Independientes\GEZI - NewStyle 2013\Entidades\obj\Debug\Entidades.dll
+F:\Projects\Independientes\GEZI - NewStyle 2013\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Entidades\bin\Debug\Entidades.dll
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Entidades\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Entidades\obj\Debug\Entidades.dll
+C:\Users\Michelle\Documents\GitHub\Test\GEZI - NewStyle 2013\Entidades\obj\Debug\Entidades.pdb
