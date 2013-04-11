@@ -16,16 +16,19 @@ public partial class Docentes_ExpDocente : System.Web.UI.Page
     Views_Negocio vn = new Views_Negocio();
     List<CategoriaDoc_Entidad> listaCatego = new List<CategoriaDoc_Entidad>();
     
+    
     protected void Page_Load(object sender, EventArgs e)
     {
         if (!IsPostBack)
         {
             CargarListas();
+            CargarExpDocente();
         }
     }
     protected void CargarListas()
     {
-        listaNivel = vn.RegresaNiveles(true);
+        //regreso niveles
+        listaNivel = vn.RegresaNiveles(false);
 
         ddlNivelEsc.DataSource = listaNivel;
         ddlNivelEsc.DataTextField = "Nombre";
@@ -33,8 +36,16 @@ public partial class Docentes_ExpDocente : System.Web.UI.Page
         ddlNivelEsc.DataBind();
 
         ddlNivelEsc.Items.Insert(0, new ListItem("Selecciona", "0"));
+        
+        //regreso categoria docentes
+        listaCatego = objDocentes.RegresaCategoria();
+        ddlCatDoc.DataSource = listaCatego;
+        ddlCatDoc.DataTextField = "Descripcion";
+        ddlCatDoc.DataValueField = "CategoDoc_Id";
+        ddlCatDoc.DataBind();
+        ddlCatDoc.Items.Insert(0, new ListItem("Selecciona", "0"));
     }
-    protected void CargarPosgrados()
+    protected void CargarExpDocente()
     {
         objListExpDoc = new List<ExpDocente_Entidad>();
 
@@ -54,7 +65,7 @@ public partial class Docentes_ExpDocente : System.Web.UI.Page
         ede.PeriodoInicio = DateTime.Parse(txtPerInicio.Text);
         ede.PeriodoFinal = DateTime.Parse(txtPerFinal.Text);
         ede.CategoriaDoc.CategoDoc_Id = ddlCatDoc.SelectedValue.Equals("0") ? 0 : Convert.ToInt32(ddlCatDoc.SelectedValue);
-        ede.ResultEvaluacion = txtResultado.Text.Trim();
+        ede.ResultEvaluacion = string.IsNullOrEmpty(txtResultado.Text) ? (decimal?)null : decimal.Parse(txtResultado.Text);
         ede.Comentarios = txtComentarios.Text.Trim();
         try
         {

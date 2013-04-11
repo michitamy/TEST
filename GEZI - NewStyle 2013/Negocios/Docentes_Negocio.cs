@@ -45,9 +45,9 @@ namespace Negocios
         {
             return objDocente.RegresaExpDocente(sOpcion, expDoc_Id);
         }
-        public List<CategoriaDoc_Entidad> RegresaCategoria(int CategoDoc_Id)
+        public List<CategoriaDoc_Entidad> RegresaCategoria()
         {
-            return objDocente.RegresaCategoria(CategoDoc_Id);
+            return objDocente.RegresaCategoria();
         }
 
     }

@@ -12,7 +12,7 @@ namespace Entidades
         
         
         string _NomAsignatura;
-        string _ResultEvaluacion;
+        Nullable<decimal> _ResultEvaluacion;
         string _Comentarios;
         string _Institucion;
         
@@ -59,7 +59,7 @@ namespace Entidades
             get { return _CategoriaDoc; }
             set { _CategoriaDoc = value; }
         }
-        public string ResultEvaluacion
+        public Nullable<decimal> ResultEvaluacion
         {
             get { return _ResultEvaluacion; }
             set { _ResultEvaluacion = value; }
@@ -80,7 +80,7 @@ namespace Entidades
         {
             
             _NomAsignatura =string.Empty;
-            _ResultEvaluacion = string.Empty;
+            _ResultEvaluacion = null;
             _Comentarios = string.Empty;
             _Institucion = string.Empty;
 

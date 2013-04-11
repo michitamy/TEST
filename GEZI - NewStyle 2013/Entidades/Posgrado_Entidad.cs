@@ -25,7 +25,6 @@ namespace Entidades
         Nivel_Entidad _Nivel;
         Usuario_Entidad _Usuario;
         #endregion
-
         #region encapsulamiento
         public int Posgrado_id
         {

@@ -355,10 +355,13 @@ namespace Datos
             paramItems = new SqlParameter("@categoriaDoc_Id", SqlDbType.Int);
             paramItems.Value = objExpDoc.CategoriaDoc.CategoDoc_Id;
             cmdItems.Parameters.Add(paramItems);
-            
-            paramItems = new SqlParameter("@resultEvaluacion", SqlDbType.Int);
-            paramItems.Value = objExpDoc.ResultEvaluacion;
-            cmdItems.Parameters.Add(paramItems);
+
+            if (objExpDoc.ResultEvaluacion == null)
+            {
+                paramItems = new SqlParameter("@resultEvaluacion", SqlDbType.Decimal);
+                paramItems.Value = objExpDoc.ResultEvaluacion;
+                cmdItems.Parameters.Add(paramItems);
+            }
 
             paramItems = new SqlParameter("@comentarios", SqlDbType.VarChar, 500);
             paramItems.Value = objExpDoc.Comentarios;
@@ -385,14 +388,14 @@ namespace Datos
                         ExpDocente_Entidad ed = new ExpDocente_Entidad();
                         ed.ExpDoc_Id = (int)reader["expDoc_Id"];
                         ed.NomAsignatura = (string)reader["nomAsignatura"];
-                        ed.NivelEscolar.Nivel_id = (int)reader["nivelEscolar"];
-                        ed.NivelEscolar.Nombre= (string)reader["nivel_nombre"];
+                        ed.NivelEscolar.Nivel_id = (int)reader["nivel_id"];
+                        ed.NivelEscolar.Nombre = (string)reader["nivel_nombre"];
                         ed.Institucion = (string)reader["institucion"];
                         ed.PeriodoInicio = (DateTime)reader["periodoInicio"];
                         ed.PeriodoFinal = (DateTime)reader["periodoFinal"];
                         ed.CategoriaDoc.CategoDoc_Id = (int)reader["categoriaDoc_Id"];
                         ed.CategoriaDoc.Descripcion = (string)reader["categoriaDoc_Des"];
-                        ed.ResultEvaluacion = (string)reader["resultEvaluacion"];
+                        ed.ResultEvaluacion = (decimal)reader["resultEvaluacion"];
                         ed.Comentarios = (string)reader["comentarios"];
 
                         listaExpPos.Add(ed);
@@ -428,7 +431,7 @@ namespace Datos
 
             cmdItems.Connection = coneccion;
             cmdItems.CommandType = CommandType.StoredProcedure;
-            cmdItems.CommandText = "[doc].[RegresaExpDocente]";
+            cmdItems.CommandText = "[doc].[spRegresaExpDocente]";
 
             try
             {
@@ -439,14 +442,14 @@ namespace Datos
                         ExpDocente_Entidad ed = new ExpDocente_Entidad();
                         ed.ExpDoc_Id = (int)reader["expDoc_Id"];
                         ed.NomAsignatura = (string)reader["nomAsignatura"];
-                        ed.NivelEscolar.Nivel_id = (int)reader["nivelEscolar"];
+                        ed.NivelEscolar.Nivel_id = (int)reader["nivel_id"];
                         ed.NivelEscolar.Nombre = (string)reader["nivel_nombre"];
                         ed.Institucion = (string)reader["institucion"];
                         ed.PeriodoInicio = (DateTime)reader["periodoInicio"];
                         ed.PeriodoFinal = (DateTime)reader["periodoFinal"];
                         ed.CategoriaDoc.CategoDoc_Id = (int)reader["categoriaDoc_Id"];
                         ed.CategoriaDoc.Descripcion = (string)reader["categoriaDoc_Des"];
-                        ed.ResultEvaluacion = (string)reader["resultEvaluacion"];
+                        ed.ResultEvaluacion = reader["resultEvaluacion"] == System.DBNull.Value ? null : (decimal?)reader["resultEvaluacion"];
                         ed.Comentarios = (string)reader["comentarios"];
 
                         listaExpPos.Add(ed);
@@ -459,7 +462,7 @@ namespace Datos
             }
             return listaExpPos;
         }
-        public List<CategoriaDoc_Entidad> RegresaCategoria(int CategoDoc_Id)
+        public List<CategoriaDoc_Entidad> RegresaCategoria()
         {
             List<CategoriaDoc_Entidad> lista = new List<CategoriaDoc_Entidad>();
             SqlCommand cmdItems = new SqlCommand();
@@ -467,9 +470,6 @@ namespace Datos
             if (coneccion.State == ConnectionState.Broken || coneccion.State == ConnectionState.Closed)
                 coneccion.Open();
 
-            SqlParameter paramItems = new SqlParameter("@categoDoc_Id", SqlDbType.Int);
-            paramItems.Value = CategoDoc_Id;
-            cmdItems.Parameters.Add(paramItems);
 
             cmdItems.Connection = coneccion;
             cmdItems.CommandType = CommandType.StoredProcedure;
@@ -483,7 +483,7 @@ namespace Datos
                     {
                         CategoriaDoc_Entidad cde = new CategoriaDoc_Entidad();
                         cde.CategoDoc_Id = (int)reader["CategoDoc_Id"];
-                        cde.Descripcion = (string)reader["Nombre"];
+                        cde.Descripcion = (string)reader["Descripcion"];
                         cde.PagoHr = (int)reader["PagoHr"];
 
                         lista.Add(cde);

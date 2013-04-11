@@ -24,7 +24,7 @@
                 <Nodes>
                     <asp:TreeNode Text="Licenciatura"   Value="Licenciatura"    NavigateUrl="~/Docentes/Licenciatura.aspx"/>
                     <asp:TreeNode Text="Posgrado"       Value="Posgrado"        NavigateUrl="~/Docentes/Posgrado.aspx"/>
-                    <asp:TreeNode Text="Exp Docente"    Value="ExpDocente"/>
+                    <asp:TreeNode Text="Exp Docente"    Value="ExpDocente"      NavigateUrl="~/Docentes/ExpDocente.aspx"/>
                     <asp:TreeNode Text="Exp Laboral"    Value="ExpLaboral"/>
                     <asp:TreeNode Text="Cursos Asis"    Value="CursosAsis"/>
                     <asp:TreeNode Text="Congresos Asis" Value="CongresosAsis"/>

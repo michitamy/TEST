@@ -1,9 +1,11 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Docentes/mpDocentes.master" AutoEventWireup="true" CodeFile="ExpDocente.aspx.cs" Inherits="Docentes_ExpDocente" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Docentes/mpDocentes.master" AutoEventWireup="true" 
+CodeFile="ExpDocente.aspx.cs" Inherits="Docentes_ExpDocente" %>
 
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"/>
     <h2>Experiencia Docente</h2>
     <asp:ValidationSummary ID="vsNuevaExpDocente" runat="server" ValidationGroup="ValidaExpDocente" ForeColor ="Red" />
     <table>
@@ -35,11 +37,11 @@
                 <asp:DropDownList runat="server" ID="ddlNivelEsc"></asp:DropDownList>
             </td>
             <td>
-                    <asp:RequiredFieldValidator ID="rfvNivel" runat="server" ErrorMessage="Es necesario que seleccione el nivel escolar."
-                    ControlToValidate="ddlNivleEsc" Display="Dynamic" ValidationGroup="ValidaExpDocente"
-                    InitialValue="" SetFocusOnError="True">
-                        <asp:Image ID="imgNivelEsc" runat="server" ImageUrl="~/Images/icons/exclamation16.png" />
-                    </asp:RequiredFieldValidator>
+                <asp:RequiredFieldValidator ID="rfvNivelEsc" runat="server" ErrorMessage="Es necesario que seleccione el nivel escolar."
+                ControlToValidate="ddlNivelEsc" Display="Dynamic" ValidationGroup="ValidaExpDocente"
+                InitialValue="" SetFocusOnError="True">
+                    <asp:Image ID="imgNivelEsc" runat="server" ImageUrl="~/Images/icons/exclamation16.png" />
+                </asp:RequiredFieldValidator>
             </td>
         </tr>
          <tr>
@@ -73,9 +75,9 @@
                     MaskType="Date" Mask="99/99/9999" MessageValidatorTip="true" CultureName="en-US"
                     OnFocusCssClass="MaskedEditFocus" OnInvalidCssClass="MaskedEditError" ErrorTooltipEnabled="True" />
                     <asp:MaskedEditValidator ID="mevPerInicio" runat="server" ControlExtender="meePerInicio"
-                    IsValidEmpty="False" ControlToValidate="txtPerFinal" EmptyValueMessage="Requerido EmptyValueMessage"
+                    IsValidEmpty="False" ControlToValidate="txtPerInicio" EmptyValueMessage="Introduzca la fecha de inicio"
                     InvalidValueMessage="La fecha del periodo final es incorrecta." Display="Dynamic"
-                    EmptyValueBlurredText="Requerido EmptyValueBlurredText" ErrorMessage="Requerido ErrorMessage"
+                    EmptyValueBlurredText="Requiere Fecha de Inicio" ErrorMessage="Requerido ErrorMessage"
                     ForeColor="Red" ValidationGroup="ValidaExpDocente">
                         <asp:Image ID="imgPerInicio" runat="server" ImageUrl="~/Images/icons/exclamation16.png" />
                 </asp:MaskedEditValidator>
@@ -97,9 +99,9 @@
                     MaskType="Date" Mask="99/99/9999" MessageValidatorTip="true" CultureName="en-US"
                     OnFocusCssClass="MaskedEditFocus" OnInvalidCssClass="MaskedEditError" ErrorTooltipEnabled="True" />
                 <asp:MaskedEditValidator ID="mevPerFinal" runat="server" ControlExtender="meePerFinal"
-                    IsValidEmpty="False" ControlToValidate="txtPerFinal" EmptyValueMessage="Requerido EmptyValueMessage"
+                    IsValidEmpty="False" ControlToValidate="txtPerFinal" EmptyValueMessage="Introduzca la fecha final"
                     InvalidValueMessage="La fecha del periodo final es incorrecta." Display="Dynamic"
-                    EmptyValueBlurredText="Requerido EmptyValueBlurredText" ErrorMessage="Requerido ErrorMessage"
+                    EmptyValueBlurredText="Requiere Fecha Final" ErrorMessage="Requerido ErrorMessage"
                     ForeColor="Red" ValidationGroup="ValidaExpDocente">
                         <asp:Image ID="imgPerFinal" runat="server" ImageUrl="~/Images/icons/exclamation16.png" />
                 </asp:MaskedEditValidator>
@@ -110,7 +112,8 @@
                 <label>Categoria como docente:</label>
             </td>
             <td>
-                <asp:dropdownlist runat="server" ID="ddlCatDoc"></asp:dropdownlist>
+                <asp:dropdownlist runat="server" ID="ddlCatDoc">
+                </asp:dropdownlist>
             </td>
         </tr>
                 <tr>
