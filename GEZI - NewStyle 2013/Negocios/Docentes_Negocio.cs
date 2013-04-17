@@ -49,6 +49,9 @@ namespace Negocios
         {
             return objDocente.RegresaCategoria();
         }
-
+        public List<Pais_Entidad> RegresaPais()
+        {
+            return objDocente.RegresaPais();
+        }
     }
 }

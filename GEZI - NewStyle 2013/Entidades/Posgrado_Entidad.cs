@@ -13,7 +13,6 @@ namespace Entidades
 
         string _Estudio;
         string _UnivDondeEstudio;
-        string _Pais;
         string _NoCedula;
         string _Comentarios;
         
@@ -23,6 +22,7 @@ namespace Entidades
         DateTime _PeriodoInicio;
         DateTime _PeriodoFinal;
         Nivel_Entidad _Nivel;
+        Pais_Entidad _Pais;
         Usuario_Entidad _Usuario;
         #endregion
         #region encapsulamiento
@@ -46,7 +46,7 @@ namespace Entidades
             get { return _UnivDondeEstudio; }
             set { _UnivDondeEstudio = value; }
         }
-        public string Pais
+        public Pais_Entidad Pais
         {
             get { return _Pais; }
             set { _Pais = value; }
@@ -95,13 +95,13 @@ namespace Entidades
             _Nivel = new Nivel_Entidad();
             _Estudio            =string.Empty;
             _UnivDondeEstudio   = string.Empty;
-            _Pais               = string.Empty;
+            
             _NoCedula           = string.Empty;
             _Comentarios        = string.Empty;
 
             _PeriodoInicio      = DateTime.Now;
             _PeriodoFinal       = DateTime.Now;
-
+            _Pais               = new Pais_Entidad();
             _Usuario            = new Usuario_Entidad();
         }
         #endregion

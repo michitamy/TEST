@@ -11,7 +11,12 @@ namespace Datos
     public class Docentes_Dato : ConeccionBD
     {
         public Docentes_Dato() : base() { }
-
+        /// <summary>
+        /// metodo para gusrdar los datos de la licenciatura
+        /// </summary>
+        /// <param name="objLic">guarda los atributos de la licenciatura en el objeto tipo Licenciatura_Entidad</param>
+        /// <param name="sOpcion">agrega o elimina</param>
+        /// <returns></returns>
         public List<Licenciatura_Entidad> Licenciatura(Licenciatura_Entidad objLic, string sOpcion)
         {
             List<Licenciatura_Entidad> lista = new List<Licenciatura_Entidad>();
@@ -41,8 +46,8 @@ namespace Datos
             paramItems.Value = objLic.DondeEstudio;
             cmdItems.Parameters.Add(paramItems);
 
-            paramItems = new SqlParameter("@pais", SqlDbType.VarChar, 30);
-            paramItems.Value = objLic.Pais;
+            paramItems = new SqlParameter("@pais_id", SqlDbType.Int);
+            paramItems.Value = objLic.Pais.Pais_id;
             cmdItems.Parameters.Add(paramItems);
 
             paramItems = new SqlParameter("@tituloLegalizado", SqlDbType.Bit);
@@ -83,7 +88,8 @@ namespace Datos
                         l.Licenciatura_id = (int)reader["Licenciatura_id"];
                         l.Licenciatura = (string)reader["Licenciatura"];
                         l.DondeEstudio = (string)reader["DondeEstudio"];
-                        l.Pais = (string)reader["Pais"];
+                        l.Pais.Pais_id = (int)reader["Pais_Id"];
+                        l.Pais.Pais=(string)reader["Pais"];
                         l.TituloLegalizado = (bool)reader["TituloLegalizado"];
                         l.PeriodoInicio = (DateTime)reader["PeriodoInicio"];
                         l.PeriodoFinal = (DateTime)reader["PeriodoFinal"];
@@ -92,6 +98,7 @@ namespace Datos
                         lista.Add(l);
                     }
                 }
+
             }
             catch (Exception e)
             {
@@ -135,7 +142,8 @@ namespace Datos
                         l.Licenciatura_id = (int)reader["Licenciatura_id"];
                         l.Licenciatura = (string)reader["Licenciatura"];
                         l.DondeEstudio = (string)reader["DondeEstudio"];
-                        l.Pais = (string)reader["Pais"];
+                        l.Pais.Pais_id = (int)reader["Pais_id"];
+                        l.Pais.Pais = (string)reader["Pais"];
                         l.TituloLegalizado = (bool)reader["TituloLegalizado"];
                         l.PeriodoInicio = (DateTime)reader["PeriodoInicio"];
                         l.PeriodoFinal = (DateTime)reader["PeriodoFinal"];
@@ -185,8 +193,8 @@ namespace Datos
             paramItems.Value = objPos.UnivDondeEstudio;
             cmdItems.Parameters.Add(paramItems);
 
-            paramItems = new SqlParameter("@pais", SqlDbType.VarChar,30);
-            paramItems.Value = objPos.Pais;
+            paramItems = new SqlParameter("@pais_id", SqlDbType.Int);
+            paramItems.Value = objPos.Pais.Pais_id;
             cmdItems.Parameters.Add(paramItems);
             
             paramItems = new SqlParameter("@tituloGradoLegal", SqlDbType.Bit);
@@ -233,17 +241,18 @@ namespace Datos
                     {
                         Posgrado_Entidad p = new Posgrado_Entidad();
                         p.Posgrado_id = (int)reader["Posgrado_id"];
-                        p.Nivel.Nivel_id = (int)reader["nivel_id"];
-                        p.Nivel.Nombre = (string)reader["nivel_nombre"];
-                        p.Estudio = (string)reader["estudio"];
-                        p.UnivDondeEstudio = (string)reader["univDondeEstudio"];
-                        p.Pais = (string)reader["pais"];
-                        p.TituloGradoLegal = (bool)reader["tituloGradoLegal"];
-                        p.PeriodoInicio = (DateTime)reader["periodoInicio"];
-                        p.PeriodoFinal = (DateTime)reader["periodoFinal"];
-                        p.Grado = (bool)reader["grado"];
-                        p.NoCedula = (string)reader["noCedula"];
-                        p.Comentarios = (string)reader["comentarios"];
+                        p.Nivel.Nivel_id = (int)reader["Nivel_id"];
+                        p.Nivel.Nombre = (string)reader["Nombre"];
+                        p.Estudio = (string)reader["Estudio"];
+                        p.UnivDondeEstudio = (string)reader["UnivDondeEstudio"];
+                        p.Pais.Pais_id = (int)reader["Pais_id"];
+                        p.Pais.Pais = (string)reader["Pais"];
+                        p.TituloGradoLegal = (bool)reader["TituloGradoLegal"];
+                        p.PeriodoInicio = (DateTime)reader["PeriodoInicio"];
+                        p.PeriodoFinal = (DateTime)reader["PeriodoFinal"];
+                        p.Grado = (bool)reader["Grado"];
+                        p.NoCedula = (string)reader["NoCedula"];
+                        p.Comentarios = (string)reader["Comentarios"];
                         
                         listaPos.Add(p);
                     }
@@ -287,12 +296,13 @@ namespace Datos
                     while (reader.Read())
                     {
                         Posgrado_Entidad p = new Posgrado_Entidad();
-                        p.Posgrado_id = (int)reader["Posgrado_id"];
+                        p.Posgrado_id = (int)reader["posgrado_id"];
                         p.Nivel.Nivel_id = (int)reader["nivel_id"];
-                        p.Nivel.Nombre = (string)reader["nivel_nombre"];
+                        p.Nivel.Nombre = (string)reader["nombre"];
                         p.Estudio = (string)reader["estudio"];
                         p.UnivDondeEstudio = (string)reader["univDondeEstudio"];
-                        p.Pais = (string)reader["pais"];
+                        p.Pais.Pais_id = (int)reader["pais_id"];
+                        p.Pais.Pais = (string)reader["pais"];
                         p.TituloGradoLegal = (bool)reader["tituloGradoLegal"];
                         p.PeriodoInicio = (DateTime)reader["periodoInicio"];
                         p.PeriodoFinal = (DateTime)reader["periodoFinal"];
@@ -356,7 +366,7 @@ namespace Datos
             paramItems.Value = objExpDoc.CategoriaDoc.CategoDoc_Id;
             cmdItems.Parameters.Add(paramItems);
 
-            if (objExpDoc.ResultEvaluacion == null)
+            if (objExpDoc.ResultEvaluacion != null)
             {
                 paramItems = new SqlParameter("@resultEvaluacion", SqlDbType.Decimal);
                 paramItems.Value = objExpDoc.ResultEvaluacion;
@@ -395,7 +405,7 @@ namespace Datos
                         ed.PeriodoFinal = (DateTime)reader["periodoFinal"];
                         ed.CategoriaDoc.CategoDoc_Id = (int)reader["categoriaDoc_Id"];
                         ed.CategoriaDoc.Descripcion = (string)reader["categoriaDoc_Des"];
-                        ed.ResultEvaluacion = (decimal)reader["resultEvaluacion"];
+                        ed.ResultEvaluacion = reader["resultEvaluacion"] == System.DBNull.Value ? null : (decimal?)reader["resultEvaluacion"];
                         ed.Comentarios = (string)reader["comentarios"];
 
                         listaExpPos.Add(ed);
@@ -462,6 +472,7 @@ namespace Datos
             }
             return listaExpPos;
         }
+
         public List<CategoriaDoc_Entidad> RegresaCategoria()
         {
             List<CategoriaDoc_Entidad> lista = new List<CategoriaDoc_Entidad>();
@@ -496,5 +507,39 @@ namespace Datos
             }
             return lista;
         }
+        public List<Pais_Entidad> RegresaPais()
+        {
+            List<Pais_Entidad> lista = new List<Pais_Entidad>();
+            SqlCommand cmdItems = new SqlCommand();
+
+            if (coneccion.State == ConnectionState.Broken || coneccion.State == ConnectionState.Closed)
+                coneccion.Open();
+
+
+            cmdItems.Connection = coneccion;
+            cmdItems.CommandType = CommandType.StoredProcedure;
+            cmdItems.CommandText = "[doc].[spRegresaPais]";
+
+
+            try
+            {
+                using (SqlDataReader reader = cmdItems.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        Pais_Entidad pd = new Pais_Entidad();
+                        pd.Pais_id = (int)reader["Pais_id"];
+                        pd.Pais = (string)reader["Pais"];
+                        lista.Add(pd);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return lista;
+        }
+
     }
 }

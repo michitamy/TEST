@@ -7,16 +7,22 @@
     {
         #region Sesiones
 
-        public static string SESSION_LOGIN = "Usuario_Login";
-        public static string SESSION_PLANTEL = "Plantel";
-        public static string SESSION_PLANTELES = "ListaPlanteles";
+        public static string SESSION_LOGIN          = "Usuario_Login";
+        public static string SESSION_PLANTEL        = "Plantel";
+        public static string SESSION_PLANTELES      = "ListaPlanteles";
         public static string SESSION_CARACTERISTICA = "Caracteristica";
-        public static string SESSION_ESCUELAS = "Escuela";
-        public static string SESSION_COMPARA = "Comparar";
-        public static string SESSION_USUARIOS = "ListaUsuarios";
-        public static string SESSION_NIVEL = "Nivel";
-        public static string SESSION_CARRERA = "Carrera";
-        public static string SESSION_COMPARADESDE = "NoComparacionActual";
+        public static string SESSION_ESCUELAS       = "Escuela";
+        public static string SESSION_COMPARA        = "Comparar";
+        public static string SESSION_USUARIOS       = "ListaUsuarios";
+        public static string SESSION_NIVEL          = "Nivel";
+        public static string SESSION_CARRERA        = "Carrera";
+        public static string SESSION_COMPARADESDE   = "NoComparacionActual";
+        public static string SESSION_LICENCIATURA   = "Licenciatura";
+        public static string SESSION_LICENCIATURAS  = "ListaLicenciaturas";
+        public static string SESSION_POSGRADO       = "Posgrado";
+        public static string SESSION_POSGRADOS      = "ListaPosgrados";
+        public static string SESSION_EXPDOCENTE     = "ExpDocente";
+        public static string SESSION_EXPDOCENTES    = "ListaExpDocente";
 
         /// <summary>
         ///Para las notificaciones debe de ser una cadena separado por comas.

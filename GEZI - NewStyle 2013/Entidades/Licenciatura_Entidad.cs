@@ -10,17 +10,16 @@ namespace Entidades
         #region Inicializacion
 
         int _Licenciatura_id;
-
+        
         string _Licenciatura;
         string _DondeEstudio;
-        string _Pais;
         string _NoCedula;
 
         bool _TituloLegalizado;
 
         DateTime _PeriodoInicio;
         DateTime _PeriodoFinal;
-
+        Pais_Entidad _Pais;
         Usuario_Entidad _Usuario;
 
         #endregion
@@ -45,7 +44,7 @@ namespace Entidades
             set { _DondeEstudio = value; }
         }
 
-        public string Pais
+        public Pais_Entidad Pais
         {
             get { return _Pais; }
             set { _Pais = value; }
@@ -88,12 +87,11 @@ namespace Entidades
         {
             _Licenciatura   = string.Empty;
             _DondeEstudio   = string.Empty;
-            _Pais           = string.Empty;
             _NoCedula       = string.Empty;
-
+            
             _PeriodoInicio  = DateTime.Now;
             _PeriodoFinal   = DateTime.Now;
-
+            _Pais           = new Pais_Entidad();
             _Usuario        = new Usuario_Entidad();
         }
         #endregion

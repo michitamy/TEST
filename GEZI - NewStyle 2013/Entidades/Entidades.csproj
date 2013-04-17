@@ -57,6 +57,7 @@
     <Compile Include="Licenciatura_Entidad.cs" />
     <Compile Include="Mensaje.cs" />
     <Compile Include="Nivel_Entidad.cs" />
+    <Compile Include="Pais_Entidad.cs" />
     <Compile Include="Plantel_Entidad.cs" />
     <Compile Include="Posgrado_Entidad.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
